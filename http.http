@@ -1,0 +1,10 @@
+GET http://localhost:3000/admin/news
+###
+POST http://localhost:3000/admin/news
+Content-Type: application/
+
+{
+    "title": "Title ",
+    "date": "2026-03-18T15:50:00.000Z",
+    "content": "Ko'ring faqat yiglamang2"
+}
