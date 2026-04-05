@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { plainToInstance } from 'class-transformer';
 import { UsersDetailPublicDto } from '../../dtos/public/users.detail.public.dto';
-import { UserEntity } from '../../entities/users.entity';
+import { UserEntity } from '../../entities/user.entity';
 
 
 @Injectable()

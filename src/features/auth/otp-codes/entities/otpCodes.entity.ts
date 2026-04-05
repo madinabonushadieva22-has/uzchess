@@ -1,7 +1,7 @@
 import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
-import { UserEntity } from '../../common/users/entities/users.entity';
 import { BaseModel } from '../../../../core/base-model';
 import { OtpType } from '../../../../core/enums';
+import { UserEntity } from '../../../common/users/entities/user.entity';
 
 @Entity('otpCodes')
 export class OtpCodeEntity extends BaseModel {

@@ -1,7 +1,7 @@
 import { Column, Entity, OneToMany } from 'typeorm';
-import { CourseEntity } from '../../courses/courses/entities/courses.entity';
-import { BookEntity } from '../../library/books/entities/books.entity';
 import { BaseModel } from '../../../../core/base-model';
+import { CourseEntity } from '../../../course/courses/entities/courses.entity';
+import { BookEntity } from '../../../library/books/entities/books.entity';
 
 @Entity('languages')
 export class LanguageEntity extends BaseModel {
