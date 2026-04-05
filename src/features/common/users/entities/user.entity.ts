@@ -11,7 +11,7 @@ import { UserLessonEntity } from '../../../course/userLessons/entities/userLesso
 import { BookLikeEntity } from '../../../library/bookLikes/entities/bookLikes.entity';
 import { BookReviewEntity } from '../../../library/bookReviews/entities/bookReviews.entity';
 import { NewsViewEntity } from '../../../news/entities/news.entity';
-import { ReportEntity } from '../../../reports/reports/entities/reports';
+import { ReportEntity } from '../../../reports/reports/entities/reports.entity';
 
 @Entity('users')
 export class UserEntity extends BaseModel {

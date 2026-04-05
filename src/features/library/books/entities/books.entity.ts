@@ -1,11 +1,12 @@
-import { BaseModel } from '../../../core/base-models';
+import { AuthorEntity } from 'src/features/common/authors/entities/authors.entity';
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
-import { AuthorEntity } from '../../common/authors/enitities/authors.entity';
-import { BookCategoryEntity } from '../../library/bookCategories/enitities/bookCategories.entity';
-import { LanguageEntity } from '../../common/language/enitities/language.entity';
-import { DifficultyEntity } from '../../common/difficulties/enitities/difficulties.entity';
-import { BookLikeEntity } from '../../library/bookLikes/enitities/bookLikes.entity';
-import { BookReviewEntity } from '../../library/bookReviews/enitities/bookReviews.entity';
+import { BaseModel } from '../../../../core/base-model';
+import { BookCategoryEntity } from '../../bookCategories/entities/bookCategories.entity';
+import { LanguageEntity } from '../../../common/language/entities/language.entities';
+import { DifficultyEntity } from '../../../common/difficulties/entities/difficulties.entity';
+import { BookLikeEntity } from '../../bookLikes/entities/bookLikes.entity';
+import { BookReviewEntity } from '../../bookReviews/entities/bookReviews.entity';
+
 
 @Entity('books')
 export class BookEntity extends BaseModel {

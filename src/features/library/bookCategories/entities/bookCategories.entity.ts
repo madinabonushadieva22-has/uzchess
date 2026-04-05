@@ -1,6 +1,7 @@
-import { BaseModel } from '../../../core/base-models';
 import { Column, Entity, OneToMany } from 'typeorm';
-import { BookEntity } from '../../library/books/enitities/books.entity';
+import { BaseModel } from '../../../../core/base-model';
+import { BookEntity } from '../../books/entities/books.entity';
+
 
 @Entity('bookCategories')
 export class BookCategoryEntity extends BaseModel {

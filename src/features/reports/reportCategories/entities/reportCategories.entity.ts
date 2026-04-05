@@ -1,6 +1,6 @@
-import { BaseModel } from '../../../core/base-models';
 import { Column, Entity, OneToMany } from 'typeorm';
-import { ReportEntity } from '../../reports/enitities/reports.entity';
+import { BaseModel } from '../../../../core/base-model';
+import { ReportEntity } from '../../reports/entities/reports.entity';
 
 @Entity('reportCategories')
 export class ReportCategoryEntity extends BaseModel {

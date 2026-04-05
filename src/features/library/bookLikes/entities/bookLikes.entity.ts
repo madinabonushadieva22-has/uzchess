@@ -1,7 +1,8 @@
-import { BaseModel } from '../../../core/base-models';
 import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
-import { UserEntity } from '../../common/users/enitities/users.entity';
-import { BookEntity } from '../../library/books/enitities/books.entity';
+import { BaseModel } from '../../../../core/base-model';
+import { UserEntity } from '../../../common/users/entities/user.entity';
+import { BookEntity } from '../../books/entities/books.entity';
+
 
 @Entity('bookLikes')
 export class BookLikeEntity extends BaseModel {

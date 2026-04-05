@@ -1,7 +1,7 @@
-import { BaseModel } from '../../../core/base-models';
 import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
-import { UserEntity } from '../../common/users/enitities/users.entity';
-import { NewsEntity } from '../../news/enitities/news.entity';
+import { BaseModel } from '../../../../core/base-model';
+import { UserEntity } from '../../../common/users/entities/user.entity';
+import { News } from '../../entities/news.entity';
 
 @Entity('newsViews')
 export class NewsViewEntity extends BaseModel {
@@ -17,9 +17,9 @@ export class NewsViewEntity extends BaseModel {
   @Column()
   newsId!: number;
 
-  @ManyToOne(() => NewsEntity, (news) => news.views, { onDelete: 'CASCADE' })
+  @ManyToOne(() => News, (news) => news.views, { onDelete: 'CASCADE' })
   @JoinColumn({ name: 'newsId' })
-  news!: NewsEntity;
+  news!: News;
 
   @Column({ type: 'timestamp' })
   firstDate!: string;
