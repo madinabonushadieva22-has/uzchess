@@ -1,6 +1,7 @@
 import { Expose } from 'class-transformer';
 import { ApiProperty } from '@nestjs/swagger';
-import { OtpType } from '../entities/otpCodes.entity';
+import { OtpType } from '../../../../core/enums';
+
 
 export class OtpCodesListDto {
   @Expose() @ApiProperty() id!: number;

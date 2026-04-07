@@ -15,8 +15,8 @@ import { CourseCategoryListAdminDto } from '../../dtos/admin/courseCategory.list
 import { CourseCategoryCreateAdminDto } from '../../dtos/admin/courseCategory.create.admin.dto';
 import { AuthenticationGuard } from 'src/core/guards/autentification.guard';
 import { UserRole } from 'src/core/enums';
-import { Roles } from '../../../../core/decorators/roles.decorator';
 import { CourseCategoryUpdateAdminDto } from '../../dtos/admin/courseCategory.update.admin.dto';
+import { Roles } from '../../../../../core/decorators/roles.decorator';
 
 @ApiTags('Admin / Course Categories')
 @ApiBearerAuth()

@@ -10,13 +10,13 @@ export class AuthPublicController {
   constructor(private readonly authPublicService: AuthPublicService) {}
 
   @Post('register')
-  @ApiOkResponse({ schema: { example: { token: 'jwt_token_here' } } })
+  @ApiOkResponse()
   register(@Body() payload: AuthCreatePublicDto): Promise<{ token: string }> {
     return this.authPublicService.register(payload);
   }
 
   @Post('login')
-  @ApiOkResponse({ schema: { example: { token: 'jwt_token_here' } } })
+  @ApiOkResponse()
   login(@Body() payload: AuthLoginPublicDto): Promise<{ token: string }> {
     return this.authPublicService.login(payload);
   }

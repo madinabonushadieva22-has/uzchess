@@ -1,11 +1,11 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { plainToInstance } from 'class-transformer';
 import { CourseLessonListAdminDto } from '../../dtos/admin/courseLesson.list.admin.dto';
-import { CourseEntity } from '../../../entities/courses.entity';
 import { CourseLessonEntity } from '../../entities/courseLessons.entity';
 import { CourseLessonDetailAdminDto } from '../../dtos/admin/courseLesson.detail.admin.dto';
 import { CourseLessonCreateAdminDto } from '../../dtos/admin/courseLesson.create.admin.dto';
 import { CourseLessonUpdateAdminDto } from '../../dtos/admin/courseLesson.update.admin.dto';
+import { CourseEntity } from '../../../courses/entities/courses.entity';
 
 
 @Injectable()

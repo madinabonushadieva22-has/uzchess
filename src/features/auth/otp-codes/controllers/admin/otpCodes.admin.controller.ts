@@ -22,7 +22,7 @@ export class OtpCodesAdminController {
   }
 
   @Delete('user/:userId')
-  @ApiOkResponse({ schema: { example: { message: 'Deleted successfully' } } })
+  @ApiOkResponse()
   async deleteByUserId(
     @Param('userId') userId: number,
   ): Promise<{ message: string }> {

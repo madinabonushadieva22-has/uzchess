@@ -1,7 +1,8 @@
 import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
 import { BaseModel } from '../../../../core/base-model';
 import { UserEntity } from '../../../common/users/entities/user.entity';
-import { CourseEntity } from '../../entities/courses.entity';
+import { CourseEntity } from '../../courses/entities/courses.entity';
+
 
 
 @Entity('courseReviews')

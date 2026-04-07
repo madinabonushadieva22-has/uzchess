@@ -12,12 +12,12 @@ import { LoginType, UserRole } from '../../entities/auth.entity';
 export class AuthCreateAdminDto {
   @IsString()
   @MaxLength(64)
-  @ApiProperty({ example: "Madina Shadieva" })
+  @ApiProperty ()
   fullName!: string;
 
   @IsString()
   @MaxLength(64)
-  @ApiProperty({ example: 'mdnsh@example.com' })
+  @ApiProperty()
   login!: string;
 
   @IsEnum(LoginType)
@@ -33,7 +33,7 @@ export class AuthCreateAdminDto {
   @IsString()
   @MinLength(6)
   @MaxLength(128)
-  @ApiPropertyOptional({ example: 'secret123' })
+  @ApiPropertyOptional()
   password?: string;
 
   @IsOptional()
@@ -44,6 +44,6 @@ export class AuthCreateAdminDto {
 
   @IsOptional()
   @IsString()
-  @ApiPropertyOptional({ example: '2000-01-01' })
+  @ApiPropertyOptional()
   birthDate?: string;
 }

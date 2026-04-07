@@ -12,7 +12,7 @@ export class OtpCodesPublicController {
 
   @Post('send')
   @HttpCode(200)
-  @ApiOkResponse({ schema: { example: { message: 'OTP sent successfully' } } })
+  @ApiOkResponse()
   sendOtp(@Body() payload: OtpCodesSendDto): Promise<{ message: string }> {
     return this.otpCodesPublicService.sendOtp(payload);
   }

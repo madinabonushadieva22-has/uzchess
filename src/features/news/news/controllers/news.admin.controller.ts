@@ -1,6 +1,6 @@
 import {Body, Controller, Delete, Get, NotFoundException, Param, Patch, Post} from "@nestjs/common";
 import { ApiOkResponse } from '@nestjs/swagger';
-import {  plainToInstance } from 'class-transformer';
+import { plainToInstance } from 'class-transformer';
 import { NewsListAdminDto } from '../dtos/admin/news.list.admin.dto';
 import { News } from '../entities/news.entity';
 import { NewsDetailAdminDto } from '../dtos/admin/news.detail.admin.dto';
@@ -9,7 +9,7 @@ import { NewsUpdateAdminDto } from '../dtos/admin/news.update.admin.dto';
 
 
 @Controller('admin/news')
-class NewsAdminController {
+export class NewsAdminController {
   @Get()
   @ApiOkResponse({type:() => NewsListAdminDto, isArray: true })
   async getAll() {

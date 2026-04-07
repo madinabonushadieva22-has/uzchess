@@ -3,10 +3,12 @@ import {
   Injectable,
   NotFoundException,
 } from '@nestjs/common';
-import { OtpCodeEntity, OtpType } from '../entities/otpCodes.entity';
+
 import { AuthEntity } from '../../auth/entities/auth.entity';
 import { OtpCodesSendDto } from '../dtos/otpCodes.send-otp.dto';
 import { OtpCodesVerifyDto } from '../dtos/otpCodes.verify-otp.dto';
+import { OtpCodeEntity } from '../entities/otpCodes.entity';
+import { OtpType } from '../../../../core/enums';
 
 @Injectable()
 export class OtpCodesPublicService {

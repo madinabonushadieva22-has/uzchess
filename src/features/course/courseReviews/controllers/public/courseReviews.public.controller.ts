@@ -5,6 +5,7 @@ import { CourseReviewsPublicService } from '../../services/public/courseReviews.
 import { AuthenticationGuard } from '../../../../../core/guards/autentification.guard';
 import { UserEntity } from 'src/features/common/users/entities/user.entity';
 import { CourseReviewCreatePublicDto } from '../../dtos/public/courseReview.create.public.dto';
+import { CurrentUser } from '../../../../../core/decorators/current-user.decorator';
 
 @ApiTags('Public / Course Reviews')
 @Controller('public/course-reviews')

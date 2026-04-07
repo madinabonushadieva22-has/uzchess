@@ -2,8 +2,8 @@ import { Controller, Get, Param, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiOkResponse, ApiTags } from '@nestjs/swagger';
 import { CoursesPublicService } from '../../services/public/courses.public.service';
 import { CourseListPublicDto } from '../../dtos/public/course.list.public.dto';
-import { AuthenticationGuard } from '../../../../core/guards/autentification.guard';
 import { CourseDetailPublicDto } from '../../dtos/public/course.detail.public.dto';
+import { AuthenticationGuard } from '../../../../../core/guards/autentification.guard';
 
 
 @ApiTags('Public / Courses')

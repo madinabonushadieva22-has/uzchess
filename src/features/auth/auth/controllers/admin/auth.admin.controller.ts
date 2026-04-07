@@ -16,13 +16,13 @@ export class AuthAdminController {
   @UseGuards(AuthenticationGuard)
   @Roles(UserRole.SUPER_ADMIN)
   @ApiBearerAuth()
-  @ApiOkResponse({ schema: { example: { token: 'jwt_token_here' } } })
+  @ApiOkResponse()
   register(@Body() payload: AuthCreateAdminDto): Promise<{ token: string }> {
     return this.authAdminService.register(payload);
   }
 
   @Post('login')
-  @ApiOkResponse({ schema: { example: { token: 'jwt_token_here' } } })
+  @ApiOkResponse()
   login(@Body() payload: AuthLoginAdminDto): Promise<{ token: string }> {
     return this.authAdminService.login(payload);
   }

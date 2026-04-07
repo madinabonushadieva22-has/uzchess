@@ -1,7 +1,8 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { ApiOkResponse, ApiTags } from '@nestjs/swagger';
-import { CourseSectionsPublicService } from '../service/courseSections.public.service';
-import { CourseSectionListPublicDto } from '../dtos/public/courseSection.list.public.dto';
+import { CourseSectionsPublicService } from '../../services/public/courseSections.public.service';
+import { CourseSectionListPublicDto } from '../../dtos/public/courseSection.list.public.dto';
+
 
 @ApiTags('Public / Course Sections')
 @Controller('public/course-sections')

@@ -5,6 +5,6 @@ export class AuthorsUpdateAdminDto {
   @IsOptional()
   @IsString()
   @MaxLength(64)
-  @ApiPropertyOptional({ example: 'Abdulla Qodiriy' })
+  @ApiPropertyOptional()
   fullName?: string;
 }

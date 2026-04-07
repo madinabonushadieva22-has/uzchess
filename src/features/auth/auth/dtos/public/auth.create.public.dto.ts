@@ -12,12 +12,12 @@ import { LoginType } from '../../entities/auth.entity';
 export class AuthCreatePublicDto {
   @IsString()
   @MaxLength(64)
-  @ApiProperty({ example: 'Madina Shadieva' })
+  @ApiProperty()
   fullName!: string;
 
   @IsString()
   @MaxLength(64)
-  @ApiProperty({ example: 'mdnsh@example.com' })
+  @ApiProperty()
   login!: string;
 
   @IsEnum(LoginType)
@@ -28,7 +28,7 @@ export class AuthCreatePublicDto {
   @IsString()
   @MinLength(6)
   @MaxLength(128)
-  @ApiPropertyOptional({ example: 'secret123' })
+  @ApiPropertyOptional()
   password?: string;
 
   @IsOptional()
@@ -39,6 +39,6 @@ export class AuthCreatePublicDto {
 
   @IsOptional()
   @IsString()
-  @ApiPropertyOptional({ example: '2000-01-01' })
+  @ApiPropertyOptional()
   birthDate?: string;
 }

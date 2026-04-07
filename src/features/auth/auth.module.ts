@@ -16,6 +16,7 @@ import { OtpCodesPublicController } from './otp-codes/controllers/public/otpCode
     JwtModule.register({
       secret: process.env.JWT_SECRET || 'secret',
       signOptions: { expiresIn: '7d' },
+      global: true
     }),
   ],
   controllers: [
@@ -31,6 +32,6 @@ import { OtpCodesPublicController } from './otp-codes/controllers/public/otpCode
     OtpCodesPublicService,
     JwtStrategy,
   ],
-  exports: [AuthAdminService, AuthPublicService],
+  exports: [AuthAdminService, AuthPublicService, JwtModule],
 })
 export class AuthModule {}

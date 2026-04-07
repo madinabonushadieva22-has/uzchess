@@ -4,12 +4,12 @@ import { IsString, MaxLength, MinLength } from 'class-validator';
 export class AuthLoginPublicDto {
   @IsString()
   @MaxLength(64)
-  @ApiProperty({ example: 'mdnsh@example.com' })
+  @ApiProperty()
   login!: string;
 
   @IsString()
   @MinLength(6)
   @MaxLength(128)
-  @ApiProperty({ example: 'secret123' })
+  @ApiProperty()
   password!: string;
 }

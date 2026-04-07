@@ -1,7 +1,8 @@
 import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
 import { BaseModel } from '../../../../core/base-model';
 import { UserEntity } from '../../../common/users/entities/user.entity';
-import { News } from '../../entities/news.entity';
+import { News } from '../../news/entities/news.entity';
+
 
 @Entity('newsViews')
 export class NewsViewEntity extends BaseModel {

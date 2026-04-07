@@ -11,14 +11,14 @@ import {
 } from '@nestjs/common';
 import { ApiBearerAuth, ApiOkResponse, ApiTags } from '@nestjs/swagger';
 
-import { Roles } from '../../../../core/decorators/roles.decorator';
-import { UserRole } from '../../../../core/enums';
-import { AuthenticationGuard } from '../../../../core/guards/autentification.guard';
 import { CourseListAdminDto } from '../../dtos/admin/course.list.admin.dto';
 import { CoursesAdminService } from '../../services/admin/courses.admin.service';
 import { CourseDetailAdminDto } from '../../dtos/admin/course.detail.admin.dto';
 import { CourseCreateAdminDto } from '../../dtos/admin/course.create.admin.dto';
 import { CourseUpdateAdminDto } from '../../dtos/admin/course.update.admin.dto';
+import { AuthenticationGuard } from '../../../../../core/guards/autentification.guard';
+import { UserRole } from '../../../../../core/enums';
+import { Roles } from '../../../../../core/decorators/roles.decorator';
 
 @ApiTags('Admin / Courses')
 @ApiBearerAuth()

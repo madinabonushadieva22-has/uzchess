@@ -4,6 +4,7 @@ import { AuthenticationGuard } from '../../../../../core/guards/autentification.
 import { CourseLikesPublicService } from '../../services/public/courseLikes.public.service';
 import { UserEntity } from '../../../../common/users/entities/user.entity';
 import { CourseLikeCreatePublicDto } from '../../dtos/public/courseLike.create.public.dto';
+import { CurrentUser } from '../../../../../core/decorators/current-user.decorator';
 
 
 @ApiTags('Public / Course Likes')

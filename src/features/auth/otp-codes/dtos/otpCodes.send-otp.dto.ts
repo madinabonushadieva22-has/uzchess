@@ -1,12 +1,12 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsEnum, IsString, MaxLength } from 'class-validator';
-import { OtpType } from '../entities/otpCodes.entity';
+import { OtpType } from '../../../../core/enums';
 
 
 export class OtpCodesSendDto {
   @IsString()
   @MaxLength(64)
-  @ApiProperty({ example: 'mdnsh@example.com' })
+  @ApiProperty()
   login!: string;
 
   @IsEnum(OtpType)

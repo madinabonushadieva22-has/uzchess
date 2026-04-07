@@ -1,8 +1,8 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { plainToInstance } from 'class-transformer';
 import { CourseSectionListPublicDto } from '../../dtos/public/courseSection.list.public.dto';
-import { CourseEntity } from '../../../entities/courses.entity';
 import { CourseSectionEntity } from '../../entities/courseSections.entity';
+import { CourseEntity } from '../../../courses/entities/courses.entity';
 
 @Injectable()
 export class CourseSectionsPublicService {

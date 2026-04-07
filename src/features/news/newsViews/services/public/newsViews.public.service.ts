@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { NewsViewRegisterPublicDto } from '../../dtos/public/newsView.register.public.dto';
-import { News } from 'src/features/news/entities/news.entity';
 import { NewsViewEntity } from '../../entities/newViews.entity';
+import { News } from '../../../news/entities/news.entity';
 
 
 @Injectable()

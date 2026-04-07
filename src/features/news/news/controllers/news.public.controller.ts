@@ -1,9 +1,10 @@
 import { Controller, Get, NotFoundException, Param } from '@nestjs/common';
 import { ApiOkResponse } from '@nestjs/swagger';
-import { News } from '../../entities/news.entity';
 import { plainToInstance } from 'class-transformer';
-import { NewsListPublicDto } from '../../dtos/public/news.list.public.dto';
-import { NewsDetailPublicDto } from '../../dtos/public/news.detail.public.dto';
+import { News } from '../entities/news.entity';
+import { NewsListPublicDto } from '../dtos/public/news.list.public.dto';
+import { NewsDetailPublicDto } from '../dtos/public/news.detail.public.dto';
+
 
 @Controller('public/news')
 export class NewsPublicController {
