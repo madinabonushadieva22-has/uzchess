@@ -1,7 +1,7 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { plainToInstance } from 'class-transformer';
 import { LanguageListAdminDto } from '../../dtos/admin/languageList.admin.dto';
-import { LanguageEntity } from '../../entities/language.entities';
+import { LanguageEntity } from '../../entities/language.entity';
 import { LanguageCreateAdminDto } from '../../dtos/admin/language.create.admin.dto';
 import { LanguageUpdateAdminDto } from '../../dtos/admin/language.update.admin.dto';
 

@@ -2,7 +2,7 @@ import { AuthorEntity } from 'src/features/common/authors/entities/authors.entit
 import { Column, Entity, JoinColumn, ManyToOne, OneToMany } from 'typeorm';
 import { BaseModel } from '../../../../core/base-model';
 import { BookCategoryEntity } from '../../bookCategories/entities/bookCategories.entity';
-import { LanguageEntity } from '../../../common/language/entities/language.entities';
+import { LanguageEntity } from '../../../common/language/entities/language.entity';
 import { DifficultyEntity } from '../../../common/difficulties/entities/difficulties.entity';
 import { BookLikeEntity } from '../../bookLikes/entities/bookLikes.entity';
 import { BookReviewEntity } from '../../bookReviews/entities/bookReviews.entity';
